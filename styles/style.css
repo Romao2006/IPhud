@@ -2,6 +2,7 @@
   margin: 0 auto;
   max-width: 1246px;
   display: flex;
+  position: relative;
 }
 
 .header {
@@ -60,8 +61,9 @@
 }
 
 .company {
-  background: url("/images/backgroud_black.png") center center / cover no-repeat;
+  background: url("/images/backgroud_black.png");
   position: relative;
+  background-size: cover;
 }
 
 .company::before {
@@ -108,7 +110,7 @@
 
 }
 
-.company_block {
+.experience_block-img {
 
   position: relative;
   right: 104px;
@@ -213,3 +215,39 @@ a.company_button-two {
   text-decoration: none;
   cursor: pointer;
 }
+
+.experience_text h2{
+  color: var(--white, #FFF);
+
+/* H1 */
+font-family: STIX Two Text;
+font-size: 38px;
+font-style: normal;
+font-weight: 400;
+line-height: 135%; /* 51.3px */
+margin: 0;
+margin-bottom: 16px;
+}
+
+.experience_text p{
+  color: var(--grey, #8A8A8A);
+
+/* SH2 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 160%; /* 25.6px */
+display: flex;
+width: 804px;
+height: 52px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.experience_text {
+  position: relative;
+  right: 31px;
+}
+

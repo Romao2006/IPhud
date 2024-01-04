@@ -3,6 +3,12 @@ document.getElementById('openModal').addEventListener('click', function() {
     document.getElementById('modal').style.display = 'block';
   });
   
+  // Добавляем обработчик клика на ссылку для открытия модального окна
+  document.querySelector('.header_contact-info').addEventListener('click', function(event) {
+    event.preventDefault(); // Предотвращаем стандартное действие ссылки
+    document.getElementById('modal').style.display = 'block';
+  });
+  
   // Добавляем обработчик клика на всем документе
   document.body.addEventListener('click', function(event) {
     if (event.target === document.getElementById('modal')) {
