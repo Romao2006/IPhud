@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="header_contact">
                     <a class="header_contact-tell" href="tel:+78888888888">+7 (888) 888 88 88</a>
-                    <a class="header_contact-info" href="#" >Получить консультацию</a>
+                    <a class="header_contact-info" href="#">Получить консультацию</a>
                 </div>
                 <div class="header_info">
                     <a href="#">Услуги</a>
@@ -38,15 +38,77 @@
         <div class="company">
             <container class="container company_container">
                 <div class="company_block1">
-                    <p>ВАШ IP ПАРТНЕР</p>
-                    <h1>Интеллектуальная собственность</h1>
-                    <p>Индивидуальные правовые решения для защиты и охраны ваших нематериальных активов в России
+                    <p class="company_block1-text1">ВАШ IP ПАРТНЕР</p>
+                    <h1><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
+                            <path
+                                d="M9.44616 7.41005C9.15468 7.64802 8.8182 7.83938 8.45187 7.97551C7.82927 8.18549 7.15452 8.24658 6.49634 8.15255C6.15465 8.11678 5.81892 8.04583 5.49605 7.94116C6.23409 10.2474 7.65775 12.3388 9.62038 14C7.59777 13.8869 5.65542 13.2621 4.02714 12.2006C1.79225 10.7156 -0.33451 7.97287 0.0439806 5.00818C0.107062 4.52464 0.461532 2.1994 2.36299 0.954866C3.59459 0.146316 5.0715 -0.148743 6.79373 0.0696884C8.21157 0.249366 9.30498 0.751407 10.08 1.56524C10.855 2.37908 11.1404 3.41487 10.9361 4.6594C10.7398 5.84844 10.2432 6.76533 9.44616 7.41005Z"
+                                fill="#DA4533" />
+                        </svg>Интеллектуальная <span>собственность</span><svg xmlns="http://www.w3.org/2000/svg"
+                            width="11" height="14" viewBox="0 0 11 14" fill="none">
+                            <path
+                                d="M1.55384 7.41005C1.84532 7.64802 2.1818 7.83938 2.54813 7.97551C3.17073 8.18549 3.84548 8.24658 4.50366 8.15255C4.84535 8.11678 5.18108 8.04583 5.50395 7.94116C4.76591 10.2474 3.34225 12.3388 1.37962 14C3.40223 13.8869 5.34458 13.2621 6.97286 12.2006C9.20775 10.7156 11.3345 7.97287 10.956 5.00819C10.8929 4.52464 10.5385 2.1994 8.63701 0.954866C7.40541 0.146316 5.9285 -0.148743 4.20627 0.0696884C2.78843 0.249366 1.69502 0.751407 0.920013 1.56524C0.14501 2.37908 -0.140353 3.41487 0.0639118 4.6594C0.260166 5.84844 0.756807 6.76533 1.55384 7.41005Z"
+                                fill="#DA4533" />
+                        </svg></h1>
+                    <p class="company_block1-text2">Индивидуальные правовые решения для защиты и охраны ваших
+                        нематериальных активов в России
                         и за рубежом</p>
-                    <button class="company_button-one">Получить индивидуальную консультацию</button>
-                    <button class="company_button-two"></button>
+                    <div class="company_btn">
+                        <button class="company_button-one" id="openModal">Получить индивидуальную консультацию</button>
+
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Запрос на консультацию</h2>
+                                <form>
+                                    <!-- Здесь разместите поля для ввода информации -->
+                                    <input type="text" placeholder="Имя">
+                                    <input type="email" placeholder="Электронная почта">
+                                    <button type="submit">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="#" class="company_button-two"><img src="images/BottonAdv.png"
+                                alt="Описание изображения"></a>
+                    </div>
                 </div>
                 <div class="company_block2">
                     <img src="images/Group 300.png" alt="">
+                </div>
+            </container>
+            <container class="container experience">
+                <div class="company_block">
+                    <img src="images/Group 301.png" alt="">
+                </div>
+                <div class="experience_text">
+                    <h2 class="">Многолетний опыт</h2>
+                    <p>Наша компания была создана в 2019 году специалистами, имеющими опыт работы в сфере
+                        интеллектуальной собственности более 20 лет</p>
+                    <div class="experience_block">
+                        <div class="experience_block1">
+                            <h3>>300</h3>
+                            <p>Представления интересов в спорах по IP правам в год</p>
+                        </div>
+                        <div class="experience_block2">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <div class="experience_block3">
+                            <h3>>2500</h3>
+                            <p>Оказаний юридической помощи компаниям в год</p>
+                        </div>
+                        <div class="experience_block4">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <div class="experience_block5">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <div class="experience_block6">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
                 </div>
             </container>
         </div>
@@ -76,6 +138,7 @@
             <p>Подвал</p>
         </footer>
     </pages>
+    <script src="script/index.js"></script>
 </body>
 
 </html>
